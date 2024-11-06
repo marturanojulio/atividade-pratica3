@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Book Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo-ficticia.png" alt="Logo da Livraria" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h1>Sobre Nós</h1>
+            <p>Somos uma livraria online fictícia especializada em diversos gêneros literários.</p>
+        </section>
+
+        <section id="produtos">
+            <h1>Livros</h1>
+            <h2>Ficção Científica</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="img/livro-o-guia-do-mochileiro-das-galáxias.jpg" alt="O Guia do Mochileiro das Galáxias">
+                    <p>O Guia do Mochileiro das Galáxias</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-duna.jpg" alt="Duna">
+                    <p>Duna</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-neuromancer.jpg" alt="Neuromancer">
+                    <p>Neuromancer</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-Fahrenheit-451.jpg" alt="Fahrenheit 451">
+                    <p>Fahrenheit 451</p>
+                </div>
+            </div>
+            <h2>Romance</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="img/livro-orgulho-e-preconceito.jpg" alt="Orgulho e Preconceito">
+                    <p>Orgulho e Preconceito</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-o-grande-gatsby.jpg" alt="O Grande Gatsby">
+                    <p>O Grande Gatsby</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-cem-anos-de-solidão.jpg" alt="Cem Anos de Solidão">
+                    <p>Cem Anos de Solidão</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-anna-karenina.jpg" alt="Anna Karenina">
+                    <p>Anna Karenina</p>
+                </div>
+            </div>
+            <h2>Thriller/Policial</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="img/livro-o-silêncio-dos-inocentes.jpg" alt="O Silêncio dos Inocentes">
+                    <p>O Silêncio dos Inocentes</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-garota-exemplar.jpg" alt="Garota Exemplar">
+                    <p>Garota Exemplar</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-a-verdade-sobre-o-caso-harry-quebert.jpg" alt="A Verdade sobre o Caso Harry Quebert">
+                    <p>A Verdade sobre o Caso Harry Quebert</p>
+                </div>
+                <div class="produto">
+                    <img src="img/livro-os-homens-que-não-amavam-as-mulheres.jpg" alt="Os Homens que Não Amavam as Mulheres">
+                    <p>Os Homens que Não Amavam as Mulheres</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h1>Contato</h1>
+            <form action="enviar_contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="faq">
+            <h1>Perguntas Frequentes</h1>
+            <ul>
+                <li><strong>Como posso comprar um livro?</strong> Selecione o livro e adicione ao carrinho.</li>
+                <li><strong>Quais são as formas de pagamento?</strong> Aceitamos cartões de crédito e débito, além de boleto bancário.</li>
+                <li><strong>Como posso cancelar meu pedido?</strong> Entre em contato com nosso suporte dentro de 24 horas após a compra.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Livraria Online Fictícia | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
